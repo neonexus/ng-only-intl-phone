@@ -68,17 +68,17 @@ gulp.task('lint', function(){
 });
 
 gulp.task('build:css', function(){
-    return gulp.src('src/ng-only-intl-phone.css')
+    return gulp.src('src/ng-intl-phone.css')
         .pipe(gulp.dest('dist/css/'))
         .pipe(minifyCss())
-        .pipe(rename('ng-only-intl-phone.min.css'))
+        .pipe(rename('ng-intl-phone.min.css'))
         .pipe(gulp.dest('dist/css/'));
 });
 
 gulp.task('uglify', function(){
-    return gulp.src('dist/js/ng-only-intl-phone.js')
+    return gulp.src('dist/js/ng-intl-phone.js')
         .pipe(uglify())
-        .pipe(rename('ng-only-intl-phone.min.js'))
+        .pipe(rename('ng-intl-phone.min.js'))
         .pipe(gulp.dest('dist/js/'));
 });
 

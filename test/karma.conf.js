@@ -29,9 +29,9 @@ module.exports = function(config){
             '../bower_components/angular-mocks/angular-mocks.js',
             // endbower
 
-            '../dist/js/ng-only-intl-phone.js',
+            '../dist/js/ng-intl-phone.js',
 
-            'ng-only-intl-phone.js'
+            'ng-intl-phone.js'
         ],
 
         // list of files / patterns to exclude

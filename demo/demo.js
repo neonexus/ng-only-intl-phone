@@ -1,4 +1,4 @@
-angular.module('bcPhoneNumberDemo', ['bcPhoneNumber']).controller('MainCtrl', function() {
+angular.module('ngIntlPhoneDemo', ['ngIntlPhone']).controller('MainCtrl', function() {
 
   this.theNumber = '165';
 });
