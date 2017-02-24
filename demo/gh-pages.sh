@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/bin/bash
 git checkout -B gh-pages HEAD
 
 gulp build
