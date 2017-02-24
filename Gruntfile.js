@@ -6,7 +6,7 @@ module.exports = function(grunt){
         pkg: grunt.file.readJSON('package.json'),
         browserify: {
             dist: {
-                files: {'dist/js/ng-only-intl-phone.js': ['src/ng-only-intl-phone.js']},
+                files: {'dist/js/ng-intl-phone.js': ['src/ng-intl-phone.js']},
                 options: {
                     browserifyOptions: {bundleExternal: false, standalone: 'ngIntlPhone'}
                 }
