@@ -1,7 +1,7 @@
 {
-  "name": "bc-phone-number",
-  "version": "5.1.1",
-  "description": "An AngularJS international phone input directive",
+  "name": "ng-only-intl-phone",
+  "version": "0.1.0",
+  "description": "A pure AngularJS (jQuery-free) international phone input directive.",
   "main": "src/bc-phone-number.js",
   "scripts": {
     "test": "gulp test"
@@ -13,20 +13,17 @@
     "directive",
     "phone"
   ],
-  "author": "Abdullah Alansari <ahimta@gmail.com>",
-  "homepage": "https://github.com/blockchain/bc-phone-number",
+  "author": "NeoNexus DeMortis <neonexus.demortis@gmail.com>",
+  "homepage": "https://github.com/neonexus/ng-only-intl-phone",
   "repository": {
-    "url": "git://github.com/blockchain/bc-phone-number.git",
+    "url": "git://github.com/neonexus/ng-only-intl-phone.git",
     "type": "git"
   },
   "license": "MIT",
   "dependencies": {
     "angular": "^1.4.7",
-    "angular-ui-bootstrap": "^0.14.1",
     "bc-countries": "^2.0.0",
-    "bc-css-flags": "^3.0.0",
-    "bootstrap": "^3.3.5",
-    "jquery": "^2.1.4"
+    "bc-css-flags": "^3.0.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.7",
@@ -65,7 +62,6 @@
     "node": ">=0.10.0"
   },
   "browserify-shim": {
-    "jquery": "global:jQuery",
     "angular": "global:angular",
     "google-libphonenumber": "global:libphonenumber",
     "digits-trie": "global:DigitsTrie",
