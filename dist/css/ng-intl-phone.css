@@ -1,16 +1,16 @@
-.bc-phone-number-dropdown-menu {
+.ng-intl-phone-dropdown-menu {
   overflow-y: scroll;
   max-height: 10em;
 }
 
-.bc-phone-number-country-anchor {
+.ng-intl-phone-country-anchor {
   padding-left: 1em;
 }
 
-.bc-phone-number-country-icon {
+.ng-intl-phone-country-icon {
   margin-right: 1em;
 }
 
-.bc-phone-number-flag {
+.ng-intl-phone-flag {
   margin-right: 0.5em;
 }
