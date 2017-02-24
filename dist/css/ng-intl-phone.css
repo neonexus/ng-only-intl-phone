@@ -1,0 +1,16 @@
+.ng-intl-phone-dropdown-menu {
+  overflow-y: scroll;
+  max-height: 10em;
+}
+
+.ng-intl-phone-country-anchor {
+  padding-left: 1em;
+}
+
+.ng-intl-phone-country-icon {
+  margin-right: 1em;
+}
+
+.ng-intl-phone-flag {
+  margin-right: 0.5em;
+}

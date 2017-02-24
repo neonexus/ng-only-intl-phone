@@ -1,0 +1,38 @@
+{
+  "name": "digits-trie",
+  "version": "1.0.1",
+  "homepage": "https://github.com/blockchain/digits-trie",
+  "authors": [
+    "Abdullah Alansari <ahimta@gmail.com>"
+  ],
+  "description": "Fast prefix operations for strings of digits",
+  "main": "dist/digits-trie.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "trie",
+    "digits",
+    "phone",
+    "prefix"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.1",
+    "commit": "2743be325b4c76c6fa0d6404219156df6c389119"
+  },
+  "_source": "https://github.com/blockchain/digits-trie.git",
+  "_target": "~1.0.0",
+  "_originalSource": "digits-trie"
+}

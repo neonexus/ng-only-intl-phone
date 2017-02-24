@@ -1,0 +1,39 @@
+{
+  "name": "bc-countries",
+  "version": "2.0.1",
+  "homepage": "https://github.com/blockchain/bc-countries",
+  "authors": [
+    "Abdullah Alansari <ahimta@gmail.com>"
+  ],
+  "description": "A convenient Javascript countries utilities (e.g: dial codes, country codes, names)",
+  "main": "dist/bc-countries.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "country",
+    "phone"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "digits-trie": "~1.0.0",
+    "google-libphonenumber": "~1.0.7"
+  },
+  "_release": "2.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.1",
+    "commit": "1e9f65a3fb31fb4e6a5605ec792869257638e6cb"
+  },
+  "_source": "https://github.com/blockchain/bc-countries.git",
+  "_target": "~2.0.0",
+  "_originalSource": "bc-countries"
+}
