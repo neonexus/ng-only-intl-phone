@@ -9,9 +9,13 @@
   "keywords": [
     "international",
     "countries",
+    "angular",
     "angularjs",
+    "ng",
+    "material",
     "directive",
-    "phone"
+    "phone",
+    "input"
   ],
   "author": "NeoNexus DeMortis <neonexus.demortis@gmail.com>",
   "homepage": "https://github.com/neonexus/ng-only-intl-phone",

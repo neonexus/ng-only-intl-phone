@@ -23,9 +23,11 @@
     "countries",
     "angular",
     "angularjs",
+    "ng",
     "material",
     "directive",
-    "phone"
+    "phone",
+    "input"
   ],
   "license": "MIT",
   "homepage": "https://github.com/neonexus/ng-only-intl-phone",
