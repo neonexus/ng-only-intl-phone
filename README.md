@@ -28,7 +28,6 @@ Just download the [dist](https://github.com/neonexus/ng-only-intl-phone/tree/mas
 
 ```js
 angular.module('myModule', ['ngIntlPhone', function(ngIntlPhone) {
-
   scope.formattedNumber = ngIntlPhone.format('966501234567');
   scope.isValid = ngIntlPhone.isValid(scope.formattedNumber);
 }]);
