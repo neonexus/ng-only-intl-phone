@@ -12,7 +12,7 @@ angular.module('myApp', ['ngIntlPhone'])
 
 ### NPM
 ```bash
-npm install --save bc-phone-number
+npm install --save ng-only-intl-phone
 ```
 ```js
 angular.module('myApp', [require('ng-only-intl-phone')])
