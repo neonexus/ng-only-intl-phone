@@ -43,7 +43,6 @@
   ],
   "dependencies": {
     "angular": "~1.6.2",
-    "bc-css-flags": "~3.0.0",
     "bc-countries": "~2.0.0"
   },
   "devDependencies": {

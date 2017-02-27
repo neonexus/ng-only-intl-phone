@@ -67,6 +67,11 @@ gulp.task('lint', function(){
         .pipe(jscs.reporter());
 });
 
+gulp.task('build:img', function(){
+    return gulp.src('img/*.png')
+        .pipe(gulp.dest('dist/img/'));
+});
+
 gulp.task('build:css', function(){
     return gulp.src('src/ng-intl-phone.css')
         .pipe(gulp.dest('dist/css/'))
@@ -113,7 +118,13 @@ gulp.task('clean', function(){
 });
 
 gulp.task('build', function(callback){
-    runSequence(['inline-templates', 'wiredep', 'build:css', 'lint'], 'browserify', 'uglify', 'clean', callback);
+    runSequence([
+        'inline-templates',
+        'wiredep',
+        'build:img',
+        'build:css',
+        'lint'
+    ], 'browserify', 'uglify', 'clean', callback);
 });
 
 gulp.task('default', function(callback){
