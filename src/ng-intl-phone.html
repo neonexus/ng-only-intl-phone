@@ -1,3 +1,37 @@
+<md-select ng-model="weapon" placeholder="Weapon" class="md-no-underline">
+    <md-option value="axe">Axe</md-option>
+    <md-option value="sword">Sword</md-option>
+    <md-option value="wand">Wand</md-option>
+    <md-option value="pen">Pen?</md-option>
+</md-select>
+
+<md-input-container>
+    <label>Select Country:</label>
+    <md-select ng-model="country" placeholder="Select Your Country">
+        <md-option ng-repeat="country in allCountries" ng-value="selectedCountry.name" value="selectedCountry.name">
+            <i class="glyphicon iti-flag bc-phone-number-country-icon" ng-class="country.iso2Code"></i> {{country.name}}
+        </md-option>
+    </md-select>
+</md-input-container>
+
+<md-input-container class="md-block animated fade" flex>
+    <label>Phone type</label>
+    <md-select ng-model="phone.type"
+               required
+               name="phoneType"
+               ng-disabled="phone.verifyCodeReady">
+        <md-option value="mobile">
+            Mobile
+        </md-option>
+        <md-option value="hardLine">
+            Land-line
+        </md-option>
+    </md-select>
+    <div ng-messages="verifyDevices.phoneType.$error" class="error-messages slide-right">
+        <div ng-message="required" class="message slide-left">This field is required</div>
+    </div>
+</md-input-container>
+
 <section class="input-group">
     <label for="{{name}}" ng-if="label">{{label}}</label>
     <div class="input-group-btn" uib-dropdown uib-keyboard-nav>
@@ -24,6 +58,7 @@
             </li>
         </ul>
     </div>
+
     <input type="tel"
            name="{{name}}"
            id="{{name}}"

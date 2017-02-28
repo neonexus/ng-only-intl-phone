@@ -26,6 +26,10 @@ module.exports = function(config){
             '../bower_components/digits-trie/dist/digits-trie.js',
             '../bower_components/google-libphonenumber/dist/browser/libphonenumber.js',
             '../bower_components/bc-countries/dist/bc-countries.js',
+            '../bower_components/angular-animate/angular-animate.js',
+            '../bower_components/angular-aria/angular-aria.js',
+            '../bower_components/angular-messages/angular-messages.js',
+            '../bower_components/angular-material/angular-material.js',
             '../bower_components/angular-mocks/angular-mocks.js',
             // endbower
 
