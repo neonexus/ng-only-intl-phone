@@ -15,6 +15,16 @@
 
     </head>
     <body ng-controller="MainCtrl as vm">
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/digits-trie/dist/digits-trie.js"></script>
+    <script src="bower_components/google-libphonenumber/dist/browser/libphonenumber.js"></script>
+    <script src="bower_components/bc-countries/dist/bc-countries.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <!-- endbower -->
         <div class="container">
             <h1>Phone Number Demo</h1>
             <form name="myForm">
@@ -28,21 +38,12 @@
                 <p>Is valid: <span ng-bind="vm.isValid"></span></p>
                 <p>Number: <span ng-bind="vm.theNumber"></span></p>
             </form>
-            <div class="form-group">
-                <input type="tel" class="form-control" ng-model="vm.newNumber" placeholder="Change number">
-            </div>
+            <!--<div class="form-group">-->
+                <!--<input type="tel" class="form-control" ng-model="vm.newNumber" placeholder="Change number">-->
+            <!--</div>-->
             <button type="button" class="btn btn-primary" ng-click="vm.theNumber = vm.newNumber">Change</button>
         </div>
-        <!-- bower:js -->
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/digits-trie/dist/digits-trie.js"></script>
-        <script src="bower_components/google-libphonenumber/dist/browser/libphonenumber.js"></script>
-        <script src="bower_components/bc-countries/dist/bc-countries.js"></script>
-        <script src="bower_components/angular-animate/angular-animate.js"></script>
-        <script src="bower_components/angular-aria/angular-aria.js"></script>
-        <script src="bower_components/angular-messages/angular-messages.js"></script>
-        <script src="bower_components/angular-material/angular-material.js"></script>
-        <!-- endbower -->
+
         <!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">-->
 
         <script src="dist/js/ng-intl-phone.js"></script>

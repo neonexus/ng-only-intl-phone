@@ -1,6 +1,8 @@
 .ng-intl-phone-dropdown-menu {
-  overflow-y: scroll;
-  max-height: 10em;
+    overflow-y: scroll;
+    max-height: 10em;
+    max-width:25em;
+    list-style:none;
 }
 
 .ng-intl-phone-country-anchor {
@@ -13,6 +15,10 @@
 
 .ng-intl-phone-flag {
   margin-right: 0.5em;
+}
+
+.ng-intl-phone-downdown-menu-divider {
+    margin-top:1em;
 }
 
 .iti-flag {
