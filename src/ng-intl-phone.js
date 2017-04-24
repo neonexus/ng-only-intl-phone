@@ -6,7 +6,7 @@ var angular = require('angular');
 global.angular = angular;
 require('../build/js/templates');
 
-angular.module('ngIntlPhone', ['bcPhoneNumberTemplates', 'ngMaterial'])
+angular.module('ngIntlPhone', ['bcPhoneNumberTemplates', 'ngMaterial', 'ngMessages'])
     .service('ngIntlPhone', function(){
         this.isValid = bcCountries.isValidNumber;
         this.format = bcCountries.formatNumber;

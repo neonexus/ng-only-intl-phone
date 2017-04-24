@@ -1,48 +1,77 @@
 
-
-
 <section class="input-group">
-    <label for="{{name}}" ng-if="label">{{label}}</label>
-    <ul>
+    <ul class="ng-intl-phone-list">
         <li>
-            <div class="input-group-btn" uib-dropdown uib-keyboard-nav>
-                <!--<label>Country</label>-->
-                <!--<md-select ng-model="country" ng-selected="defaultCountryCode" aria-label="Country">-->
-                    <!--<md-option ng-repeat="country in allCountries" ng-value="selectedCountry.name" value="selectedCountry.name" >-->
-                        <!--<i class="glyphicon iti-flag bc-phone-number-country-icon" ng-class="country.iso2Code"></i> {{country.name}}-->
-                    <!--</md-option>-->
-                <!--</md-select>-->
+            <div class="md-menu-demo menudemoCustomTrigger" ng-cloak="" >
+                <div class="menu-demo-container" layout="column">
+                    <md-menu>
+                        <md-button aria-label="Open menu with custom trigger" class="md-icon-button" ng-click="$mdOpenMenu()">
+                            <i class="glyphicon iti-flag bc-phone-number-country-icon" ng-class="selectedCountry.iso2Code"></i>
+                        </md-button>
+                        <md-menu-content width="10" ng-click="$mdMenu.close()">
+                            <md-menu-item ng-repeat="country in preferredCountries" ng-class="{active: isCountrySelected(country)}" ng-click="selectCountry(country)">
+                                <md-button ng-click="$event.preventDefault()"  aria-label="country.name" class="bc-phone-number-country-anchor">
+                                    <i class="glyphicon iti-flag bc-phone-number-country-icon" ng-class="country.iso2Code"></i>
+                                    <span ng-bind="country.name"></span>
+                                </md-button>
+                            </md-menu-item>
 
-
-                TODO: Check agentui for solution on onClick button drop down without jQuery
-                <ul class="uib-dropdown-menu bc-phone-number-dropdown-menu ng-intl-phone-dropdown-menu" role="menu">
-                    <li ng-repeat="country in preferredCountries" ng-click="selectCountry(country)"
-                    ng-class="{active: isCountrySelected(country)}" role="menuitem">
-                        <a href="#" ng-click="$event.preventDefault()" class="bc-phone-number-country-anchor">
-                            <i class="glyphicon iti-flag bc-phone-number-country-icon" ng-class="country.iso2Code"></i>
-                            <span ng-bind="country.name"></span>
-                        </a>
-                    </li>
-                    <li role="separator" class="ng-intl-phone-downdown-menu-divider" ng-show="preferredCountries && preferredCountries.length"></li>
-                        <li ng-repeat="country in allCountries" ng-click="selectCountry(country)"
-                            ng-class="{active: isCountrySelected(country)}" role="menuitem">
-                            <a href="#" ng-click="$event.preventDefault()" class="bc-phone-number-country-anchor">
-                                <i class="glyphicon iti-flag bc-phone-number-country-icon" ng-class="country.iso2Code"></i>
-                                <span ng-bind="country.name"></span>
-                            </a>
-                    </li>
-                </ul>
+                            <md-menu-item ng-repeat="country in allCountries"
+                                          ng-class="{active: isCountrySelected(country)}"
+                                          class="ng-intl-phone-downdown-menu-divider"
+                                          ng-click="selectCountry(country)">
+                                <md-button ng-click="$event.preventDefault()"  aria-label="country.name" class="bc-phone-number-country-anchor">
+                                    <i class="glyphicon iti-flag bc-phone-number-country-icon" ng-class="country.iso2Code"></i>
+                                    <span ng-bind="country.name"></span>
+                                </md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                </div>
             </div>
         </li>
         <li>
             <input type="tel"
-               name="{{name}}"
-               id="{{name}}"
-               class="form-control"
-               ng-model="number"
-               ng-disabled="ngDisabled"
-               ng-change="changed()"/>
+                   name="{{name}}"
+                   id="{{name}}"
+                   class="form-control"
+                   ng-model="number"
+                   ng-disabled="ngDisabled"
+                   ng-change="changed()"/>
         </li>
     </ul>
+
+
+    <!--<ul>-->
+        <!--<li>-->
+            <!--<button ng-click="toggle()">button</button>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<input type="tel"-->
+               <!--name="{{name}}"-->
+               <!--id="{{name}}"-->
+               <!--class="form-control"-->
+               <!--ng-model="number"-->
+               <!--ng-disabled="ngDisabled"-->
+               <!--ng-change="changed()"/>-->
+        <!--</li>-->
+
+        <!--<div class="input-group-btn" uib-dropdown uib-keyboard-nav>-->
+            <!--<ul class="uib-dropdown-menu bc-phone-number-dropdown-menu ng-intl-phone-dropdown-menu" role="menu" ng-hide="toggle" ng-show="toggle">-->
+                <!--<li ng-repeat="country in preferredCountries" ng-click="selectCountry(country)"-->
+                    <!--ng-class="{active: isCountrySelected(country)}" role="menuitem">-->
+
+                <!--</li>-->
+                <!--<li role="separator" class="ng-intl-phone-downdown-menu-divider" ng-show="preferredCountries && preferredCountries.length"></li>-->
+                <!--<li ng-repeat="country in allCountries" ng-click="selectCountry(country)"-->
+                    <!--ng-class="{active: isCountrySelected(country)}" role="menuitem">-->
+                    <!--<a href="#" ng-click="$event.preventDefault()" class="bc-phone-number-country-anchor">-->
+                        <!--<i class="glyphicon iti-flag bc-phone-number-country-icon" ng-class="country.iso2Code"></i>-->
+                        <!--<span ng-bind="country.name"></span>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</ul>-->
 
 </section>

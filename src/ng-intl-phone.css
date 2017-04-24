@@ -5,6 +5,22 @@
     list-style:none;
 }
 
+.ng-intl-phone-list  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ng-intl-phone-list li {
+    display:inline;
+    float:left;
+}
+
+.ng-intl-phone-list li:nth-child(2){
+    margin-top:5px;
+}
+
+
 .ng-intl-phone-country-anchor {
   padding-left: 1em;
 }
@@ -31,6 +47,7 @@
     background-color: #DBDBDB;
     background-position: 20px 0;
 }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .iti-flag {
         background-image: url("../img/flags@2x.png");
