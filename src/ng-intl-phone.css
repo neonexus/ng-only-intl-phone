@@ -9,15 +9,12 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    white-space: nowrap;
 }
 
 .ng-intl-phone-list li {
-    display:inline;
-    float:left;
-}
-
-.ng-intl-phone-list li:nth-child(2){
-    margin-top:5px;
+    display:inline-block;
+    float:none;
 }
 
 

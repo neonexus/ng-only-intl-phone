@@ -1,4 +1,5 @@
 angular.module('ngIntlPhoneDemo', ['ngIntlPhone']).controller('MainCtrl', function() {
 
-  this.theNumber = '165';
+    this.theNumber = '1800';
+    console.log(this);
 });
