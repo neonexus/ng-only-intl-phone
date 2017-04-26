@@ -14,6 +14,7 @@ angular.module('ngIntlPhone', ['bcPhoneNumberTemplates', 'ngMaterial', 'ngMessag
     .service('ngIntlPhone', function(){
         this.isValid = bcCountries.isValidNumber;
         this.format = bcCountries.formatNumber;
+        this.getCountries = bcCountries.getAllCountries();
     })
     .directive('ngIntlPhone', function(){
 
@@ -61,7 +62,7 @@ angular.module('ngIntlPhone', ['bcPhoneNumberTemplates', 'ngMaterial', 'ngMessag
 
                 scope.selectCountry = function(country){
                     scope.selectedCountry = country;
-                    scope.number = scope.ngModel = bcCountries.changeDialCode(scope.number, country.dialCode);
+                    //scope.number = scope.ngModel = bcCountries.changeDialCode(scope.number, country.dialCode);
                 };
 
                 scope.isCountrySelected = function(country){
@@ -95,21 +96,7 @@ angular.module('ngIntlPhone', ['bcPhoneNumberTemplates', 'ngMaterial', 'ngMessag
                 scope.$watch('number', function(newValue){
                     if (newValue === '') { scope.ngModel = ''; }
                     else if (newValue) {
-                        var digits = bcCountries.getDigits(newValue);
-                        var countryCode = bcCountries.getIso2CodeByDigits(digits);
-
-                        if (countryCode) {
-                            var dialCode = bcCountries.getDialCodeByDigits(digits);
-                            var number = bcCountries.formatNumber(newValue);
-
-                            if (dialCode !== scope.selectedCountry.dialCode) {
-                                scope.selectedCountry = bcCountries.getCountryByIso2Code(countryCode);
-                            }
-
-                            scope.ngModel = number;
-                            scope.number = number;
-                        }
-                        else { scope.ngModel = newValue; }
+                        scope.ngModel = newValue;
                     }
                 });
             }

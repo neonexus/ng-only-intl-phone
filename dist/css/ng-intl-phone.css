@@ -15,9 +15,7 @@
 .ng-intl-phone-list li {
     display:inline-block;
     float:none;
-    margin:0px;
 }
-
 
 .ng-intl-phone-country-anchor {
   padding-left: 1em;
