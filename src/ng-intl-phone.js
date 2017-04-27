@@ -83,7 +83,7 @@ angular.module('ngIntlPhone', ['bcPhoneNumberTemplates', 'ngMaterial', 'ngMessag
                 scope.resetCountry();
 
                 scope.$watch('ngModel', function(newValue){
-                    scope.number = newValue;
+                    scope.number = bcCountries.formatNumber(newValue);
                 });
 
                 scope.$watch('number', function(newValue){
