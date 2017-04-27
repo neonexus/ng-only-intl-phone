@@ -11,6 +11,8 @@ angular.module('ngIntlPhone', ['bcPhoneNumberTemplates', 'ngMaterial', 'ngMessag
         this.isValid = bcCountries.isValidNumber;
         this.format = bcCountries.formatNumber;
         this.getCountries = bcCountries.getAllCountries();
+        this.getIso2CodeByDigits = bcCountries.getIso2CodeByDigits;
+        this.getDialCodeByDigits = bcCountries.getDialCodeByDigits;
     })
     .directive('ngIntlPhone', function(){
 
