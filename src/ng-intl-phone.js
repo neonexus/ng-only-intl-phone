@@ -58,7 +58,7 @@ angular.module('ngIntlPhone', ['bcPhoneNumberTemplates', 'ngMaterial', 'ngMessag
 
                 scope.selectCountry = function(country){
                     scope.selectedCountry = country;
-                    //scope.number = scope.ngModel = bcCountries.changeDialCode(scope.number, country.dialCode);
+                    scope.number = scope.ngModel = bcCountries.changeDialCode(scope.number, country.dialCode);
                 };
 
                 scope.isCountrySelected = function(country){
